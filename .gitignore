@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Mac OS
+.DS_Store
+
+# Dataset forder
+dataset/
+
 # Distribution / packaging
 .Python
 build/
