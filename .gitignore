@@ -9,8 +9,13 @@ __pycache__/
 # Mac OS
 .DS_Store
 
+# Tmp files
+/tmp
 # Dataset forder
 dataset/
+
+results/
+results_*
 
 # Distribution / packaging
 .Python

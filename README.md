@@ -1,33 +1,66 @@
-# MMTRC
-Multi-Modal Temporal Relation Classification
+# **MMTRC**
+
+**Multi-Modal Temporal Relation Classification**
 
 ---
 
-## Project Setup
+## 📊 1. Dataset Analysis
 
-### 1. Create a Virtual Environment
+Run the notebook `dataset_analysis.ipynb` to analyze the structure and contents of the dataset.
 
-```bash
-python -m venv venv
+This includes:
+
+* Number of samples and steps per instance.
+* Distribution of temporal relation labels (e.g., "yes"/"no").
+* Optional visual checks and sanity validations.
+
+---
+
+## 🧪 2. Evaluation
+
+To run an evaluation, **modify the `config.py` file to select the experiment you want to perform**.
+
+Example configuration:
+
+```python
+MODEL = "llava"  # Options: 'qwen', 'llava'
+PATH_DATASET = "dataset/english_N1000_2025-02-11.json"
+TYPE_PROMPT = "after"  # Options: 'before', 'after'
+RANDOM_ORDER = True
 ```
 
-#### Activate it:
-
-- **Windows**:
-  ```bash
-  .\venv\Scripts\activate
-  ```
-- **Linux / macOS**:
-  ```bash
-  source venv/bin/activate
-  ```
-
-### 2. Install NumPy
+Then execute:
 
 ```bash
-pip install numpy
+python evaluate.py
 ```
 
-### 3. Run the Notebook
+This will generate a CSV file containing predictions and ground truth labels.
 
-Open `dataset_analysis.ipynb` and run it.
+---
+
+### 📈 Analyze Results
+
+To obtain the performance of one or more experiments:
+
+```bash
+python analyze_prediction.py
+```
+
+Inside the script, specify the CSV files of the experiments you want to analyze.
+The script will compute performance metrics such as accuracy and F1 score.
+
+---
+
+## 🤖 Models Used
+
+This project supports the following models:
+
+* **Qwen2.5-VL-7B-Instruct**
+  🔗 [See documentation](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)
+
+* **LLaVA-OneVision-Qwen2-7B-OV**
+  🔗 [See documentation](https://huggingface.co/lmms-lab/llava-onevision-qwen2-7b-ov)
+
+Please refer to the official model pages for installation and setup instructions.
+
