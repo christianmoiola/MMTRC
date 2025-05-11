@@ -41,7 +41,14 @@ if __name__ == "__main__":
     elif MODEL == "llava":
 
         warnings.filterwarnings("ignore")
-        tokenizer, model, image_processor, max_length = load_pretrained_model("lmms-lab/llava-onevision-qwen2-7b-ov", None, "llava_qwen", device_map=DEVICE, cache_dir=PATH_MODELS, attn_implementation="flash_attention_2")
+        llava_model_args = {
+        "multimodal": True,
+        }
+        overwrite_config = {}
+        overwrite_config["image_aspect_ratio"] = "pad"
+        llava_model_args["overwrite_config"] = overwrite_config
+
+        tokenizer, model, image_processor, max_length = load_pretrained_model("lmms-lab/llava-onevision-qwen2-7b-ov", None, "llava_qwen", device_map=DEVICE, cache_dir=PATH_MODELS, **llava_model_args)
 
 
         eval_llava(
