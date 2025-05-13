@@ -106,7 +106,7 @@ def eval_qwen(model, processor, dataset, name_dataset, question_prompt, type_pro
 
 def eval_llava(tokenizer, model, image_processor, max_length, dataset, name_dataset, question_prompt, type_prompt, random_order=False):
     model.eval()
-
+    model.to(DEVICE)
     if type_prompt not in ["before", "after"]:
         print("Invalid type_prompt")
 

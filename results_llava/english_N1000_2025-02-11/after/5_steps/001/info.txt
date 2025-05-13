@@ -1,0 +1,10 @@
+Dataset: english_N1000_2025-02-11
+Type Prompt: after
+Step Distance: 5
+Question Prompt: This are 2 images that are taken from a recipe. I want to know if the first image provided was taken after the second image. Please answer with 'yes' or 'no'.
+Random Order: True
+Message Prompt: <image> This is the First Image.
+
+ <image> This is the second Image.
+
+This are 2 images that are taken from a recipe. I want to know if the first image provided was taken after the second image. Please answer with 'yes' or 'no'.

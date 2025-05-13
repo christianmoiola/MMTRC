@@ -1,0 +1,6 @@
+Dataset: italian_N50_2024-11-29
+Type Prompt: after
+Step Distance: 1
+Question Prompt: Does the step shown in the first image happen after the step in the second? Answer with 'yes' or 'no'.
+Random Order: True
+Message Prompt: [{'role': 'user', 'content': [{'type': 'text', 'text': 'This is the first Image of a recipe.'}, {'type': 'image', 'image': ''}, {'type': 'text', 'text': 'This is the second Image of a recipe.'}, {'type': 'image', 'image': ''}, {'type': 'text', 'text': "Does the step shown in the first image happen after the step in the second? Answer with 'yes' or 'no'."}]}]

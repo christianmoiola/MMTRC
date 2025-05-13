@@ -1,0 +1,6 @@
+Dataset: italian_N50_2024-11-29
+Type Prompt: before
+Step Distance: 5
+Question Prompt: In base alle seguenti immagini che rappresentano i passaggi di una ricetta, il passaggio 1 (La prima immagine) è avvenuto prima del passaggio 2 (La seconda immagine)? Rispondi solo con 'yes' o 'no'.
+Random Order: True
+Message Prompt: [{'role': 'user', 'content': [{'type': 'image', 'image': ''}, {'type': 'text', 'text': 'This is the first Image.'}, {'type': 'image', 'image': ''}, {'type': 'text', 'text': 'This is the second Image.'}, {'type': 'text', 'text': "In base alle seguenti immagini che rappresentano i passaggi di una ricetta, il passaggio 1 (La prima immagine) è avvenuto prima del passaggio 2 (La seconda immagine)? Rispondi solo con 'yes' o 'no'."}]}]

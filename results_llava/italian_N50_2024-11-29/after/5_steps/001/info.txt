@@ -1,0 +1,6 @@
+Dataset: italian_N50_2024-11-29
+Type Prompt: after
+Step Distance: 5
+Question Prompt: Does the step shown in the first image happen after the step in the second? Answer with 'yes' or 'no'.
+Random Order: True
+Message Prompt: <image><image>Does the step shown in the first image happen after the step in the second? Answer with 'yes' or 'no'.

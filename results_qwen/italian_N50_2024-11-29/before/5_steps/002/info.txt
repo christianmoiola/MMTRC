@@ -1,0 +1,6 @@
+Dataset: italian_N50_2024-11-29
+Type Prompt: before
+Step Distance: 5
+Question Prompt: You are given two images from a cooking recipe. Does the first image show a step that happens before the second image in the recipe? Answer only with 'yes' or 'no'.
+Random Order: True
+Message Prompt: [{'role': 'user', 'content': [{'type': 'image', 'image': ''}, {'type': 'text', 'text': 'This is the first Image.'}, {'type': 'image', 'image': ''}, {'type': 'text', 'text': 'This is the second Image.'}, {'type': 'text', 'text': "You are given two images from a cooking recipe. Does the first image show a step that happens before the second image in the recipe? Answer only with 'yes' or 'no'."}]}]

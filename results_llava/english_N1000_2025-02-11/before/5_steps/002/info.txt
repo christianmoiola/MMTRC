@@ -1,0 +1,10 @@
+Dataset: english_N1000_2025-02-11
+Type Prompt: before
+Step Distance: 5
+Question Prompt: This are 2 images that are taken from a recipe. I want to know if the first image provided was taken before the second image. Please answer with 'yes' or 'no'.
+Random Order: True
+Message Prompt: <image> This is the First Image.  Pour a generous ladle of tomato sauce onto the pizza base and spread it in a circular motion, covering almost the entire area, leaving only a border of about 0 This is the text of the first image
+
+ <image> This is the second Image.  Pour a generous ladle of tomato sauce onto the pizza base and spread it in a circular motion, covering almost the entire area, leaving only a border of about 0 This is the text of the second image.
+
+This are 2 images that are taken from a recipe. I want to know if the first image provided was taken before the second image. Please answer with 'yes' or 'no'.

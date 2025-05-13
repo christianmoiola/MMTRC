@@ -14,9 +14,6 @@ __pycache__/
 # Dataset forder
 dataset/
 
-results/
-results_*
-
 # Distribution / packaging
 .Python
 build/
